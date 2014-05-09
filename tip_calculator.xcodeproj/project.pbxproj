@@ -23,6 +23,8 @@
 		BA9193D41919D5F9006CC001 /* tip_calculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9193D31919D5F9006CC001 /* tip_calculatorTests.m */; };
 		BA9193E01919D71D006CC001 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9193DE1919D71D006CC001 /* TipViewController.m */; };
 		BA9193E11919D71D006CC001 /* TipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA9193DF1919D71D006CC001 /* TipViewController.xib */; };
+		BADA6080191D515800D5117C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADA607E191D515800D5117C /* SettingsViewController.m */; };
+		BADA6081191D515800D5117C /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADA607F191D515800D5117C /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		BA9193DD1919D71D006CC001 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		BA9193DE1919D71D006CC001 /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		BA9193DF1919D71D006CC001 /* TipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipViewController.xib; sourceTree = "<group>"; };
+		BADA607D191D515800D5117C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		BADA607E191D515800D5117C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		BADA607F191D515800D5117C /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,9 @@
 				BA9193DD1919D71D006CC001 /* TipViewController.h */,
 				BA9193DE1919D71D006CC001 /* TipViewController.m */,
 				BA9193DF1919D71D006CC001 /* TipViewController.xib */,
+				BADA607D191D515800D5117C /* SettingsViewController.h */,
+				BADA607E191D515800D5117C /* SettingsViewController.m */,
+				BADA607F191D515800D5117C /* SettingsViewController.xib */,
 			);
 			path = tip_calculator;
 			sourceTree = "<group>";
@@ -205,6 +213,7 @@
 		BA91939D1919D5F8006CC001 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Guy Morita";
 			};
@@ -232,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA9193B31919D5F9006CC001 /* InfoPlist.strings in Resources */,
+				BADA6081191D515800D5117C /* SettingsViewController.xib in Resources */,
 				BA9193BB1919D5F9006CC001 /* Default.png in Resources */,
 				BA9193BD1919D5F9006CC001 /* Default@2x.png in Resources */,
 				BA9193BF1919D5F9006CC001 /* Default-568h@2x.png in Resources */,
@@ -273,6 +283,7 @@
 				BA9193B51919D5F9006CC001 /* main.m in Sources */,
 				BA9193B91919D5F9006CC001 /* AppDelegate.m in Sources */,
 				BA9193E01919D71D006CC001 /* TipViewController.m in Sources */,
+				BADA6080191D515800D5117C /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +460,7 @@
 				BA9193D91919D5F9006CC001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA9193DA1919D5F9006CC001 /* Build configuration list for PBXNativeTarget "tip_calculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +469,7 @@
 				BA9193DC1919D5F9006CC001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,8 @@
 //
 
 #import "TipViewController.h"
+#import "SettingsViewController.h"
+
 
 @interface TipViewController ()
 
@@ -27,7 +29,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.title = @"Tip Calculator";
+        self.title = @"Tip Terminator";
     }
     return self;
 }
@@ -36,7 +38,19 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonItemStylePlain target:self action:@selector(onSettingsButton)];
     [self updateValues];
+}
+- (void)onSettingsButton
+{
+    [self.navigationController pushViewController:[[SettingsViewController alloc] init] animated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    int defaultTip = [defaults integerForKey:@"defaultTip"];
+    self.tipControl.selectedSegmentIndex = defaultTip;
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,8 +73,6 @@
     
     self.tipLabel.text = [NSString stringWithFormat:@"$%0.2f", tipAmount];
     self.totalLabel.text = [NSString stringWithFormat:@"$%0.2f", totalAmount];
-    
-    
 }
 
 @end
